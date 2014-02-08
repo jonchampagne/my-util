@@ -19,8 +19,8 @@ import javax.sound.sampled.SourceDataLine;
  */
 public class AudioInputStreamPlayer {
 
-    private AudioInputStream in;
-    private AudioFormat format;
+    private final AudioInputStream in;
+    private final AudioFormat format;
     SourceDataLine sourceDataLine;
 
     public AudioInputStreamPlayer(AudioInputStream in, AudioFormat format) {
